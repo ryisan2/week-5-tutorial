@@ -10,7 +10,7 @@ function Book({ book }) {
         {/* //   src="https://covers.openlibrary.org/b/id/1010273721-L.jpg"
             //   we needed to change the above src to book.url */}
         <figure className="book__img--wrapper">
-          <img src="{book.url}" alt="" className="book__img" />
+          <img src={book.url} alt="" className="book__img" />
         </figure>
       </a>
       <div className="book__title">
