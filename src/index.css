@@ -232,11 +232,6 @@ header {
   height: calc(100vh - 80px);
 }
 
-.header__title {
-  margin-top: 50px;
-}
-
-
 .header__container {
   width: 100%;
   max-width: 720px;
@@ -254,7 +249,6 @@ header {
 }
 
 .header__img--wrapper {
-  margin-top: 200px;
   padding: 20px;
 
   /* Added this after the tutorial to 
@@ -410,6 +404,7 @@ FEATURES
 .book__title--skeleton {
   height: 21px;
   width: 100%;
+  max-width: 250px;
 }
 
 .book__rating--skeleton {
@@ -766,11 +761,75 @@ select {
   padding: 40px;
   max-width: 400px;
 }
+.checkout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  margin-top: 20px;
+  width: 100%;
+
+}
+.checkout__textarea {
+  max-width: 300px;
+  max-height: 70px;
+  padding: 8px;
+  font-size: 16px;
+  margin-bottom: 16px;
+
+
+}
+
+
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.checkout__field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 16px;
+}
+
+.checkout__field input {
+  width: 100%; /* Make the input take full width of its container */
+  max-width: 400px; /* Limit the input width */
+  padding: 10px; /* Add padding for better aesthetics */
+  font-size: 16px; /* Adjust font size */
+  border: 1px solid #ccc; /* Border styling */
+  border-radius: 5px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  margin-bottom: 10px; /* Add some space between the input fields */
+}
+
+.checkout__field input:focus {
+  border-color: #007BFF; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a slight shadow for better visibility */
+}
+
+.checkoutForm {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  margin-bottom: 10px;
+}
 
 .btn__checkout {
   width: 100%;
+  max-width: 300px;
   font-size: 16px;
   padding: 12px 0;
+  margin-bottom: 20px;
 }
 
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */

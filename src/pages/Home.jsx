@@ -1,8 +1,4 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import LibraryLogo from "../assets/Library.svg";
-import { books } from "../data";
-import Book from "../ui/book";
 import Landing from "../components/Landing";
 import Highlights from "../components/Highlights";
 import Featured from "../components/Featured";
@@ -19,6 +15,6 @@ const Home = () => {
       <Explore />
     </>
   );
-};
+}
 
 export default Home;
