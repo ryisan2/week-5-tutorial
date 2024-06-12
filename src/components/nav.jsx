@@ -13,6 +13,7 @@ function Nav({ numberOfItems }) {
   }
 
   return (
+    // working on the nav
     <nav>
       <div className="nav__container">
         <Link to="/">
